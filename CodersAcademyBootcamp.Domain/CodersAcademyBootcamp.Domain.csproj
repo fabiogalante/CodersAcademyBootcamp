@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="9.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CodersAcademyBootcamp.Crosscutting\CodersAcademyBootcamp.Crosscutting.csproj" />
+    <ProjectReference Include="..\CodersAcademyBootcamp.Infrastructure\CodersAcademyBootcamp.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Album\Specification\" />
+  </ItemGroup>
+
+</Project>

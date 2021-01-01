@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.0" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.0" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CodersAcademyBootcamp.Application\CodersAcademyBootcamp.Application.csproj" />
+    <ProjectReference Include="..\CodersAcademyBootcamp.Crosscutting\CodersAcademyBootcamp.Crosscutting.csproj" />
+    <ProjectReference Include="..\CodersAcademyBootcamp.Domain\CodersAcademyBootcamp.Domain.csproj" />
+    <ProjectReference Include="..\CodersAcademyBootcamp.Repository\CodersAcademyBootcamp.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
